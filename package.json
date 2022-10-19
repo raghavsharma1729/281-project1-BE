@@ -3,10 +3,10 @@
   "name": "PROJECT1_BE",
   "version": "1.0.0",
   "description": "backend to save files on cloud ",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon app.js"
   },
   "author": "Raghav Sharma",
   "license": "ISC",

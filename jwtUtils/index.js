@@ -1,8 +1,6 @@
 import jsonwebtoken from 'jsonwebtoken';
 
-// TODO: get the keys from env
-const privateKey = 'somefilename';
-const publicKey = 'somepublicKey';
+const privateKey = 'prviateKeyToSignJWTtoken';
 
 const signJWT = (data) => jsonwebtoken.sign({
     data
