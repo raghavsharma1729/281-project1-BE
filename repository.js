@@ -123,7 +123,7 @@ export async function updateFile(request, response) {
 export async function removefile(request, response) {
     const user = await verifyUser(request);
     const { id } = request.params;
-    const text = `DELETE FROM files WHERE id = $1 AND userId = $2`;
+    const text = `DELETE FROM files WHERE id = $1 AND "userId" = $2`;
     const values = [id, user.id];
     return pool.query(text, values, (error, results) => {
         if (error) {
